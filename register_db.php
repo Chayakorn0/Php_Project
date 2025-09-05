@@ -45,7 +45,7 @@ if (empty($username)) {
             $stmt->execute([$username, $email, $hashedPassword]);
 
             $_SESSION['success'] = "ลงทะเบียนสำเร็จ";
-            header("location: register.php");
+            header("location: login.php");
         } catch (PDOException $e) {
             $_SESSION['error'] = "มีบางอย่างผิดพลาด โปรดลองอีกครั้ง";
             echo "ลงทะเบียนไม่สำเร็จ: " . $e->getMessage();
