@@ -44,8 +44,8 @@ if (empty($username)) {
             $stmt = $pdo->prepare("INSERT INTO users(username , email , password) VALUES(?,?,?)");
             $stmt->execute([$username, $email, $hashedPassword]);
 
-            $_SESSION['success'] = "ลงทะเบียนสำเร็จ เข้าสู่ระบบได้เลย";
-            header("location: register.php");
+            $_SESSION['success'] = "ลงทะเบียนสำเร็จ";
+            header("location: login.php");
         } catch (PDOException $e) {
             $_SESSION['error'] = "มีบางอย่างผิดพลาด โปรดลองอีกครั้ง";
             echo "ลงทะเบียนไม่สำเร็จ: " . $e->getMessage();
