@@ -44,7 +44,7 @@ if (!isset($_SESSION['user_id'])) {
         <?php if ($count > 0) { ?>
             <form action="searchData.php" method="POST">
                 <label class="fs-3 mb-4">ค้นหาชื่อพนักงาน</label>
-                <input type="text" name="empname" id="" class="form-control mb-4 shadow p-3 mb-5 bg-body-tertiary rounded">
+                <input type="text" name="empname" id="" class="form-control mb-4 shadow p-3 bg-body-tertiary rounded">
                 <input type="submit" value="ค้นหา" id="" class="btn btn-primary my-2 fs-5">
             </form>
             <table class="table table-hover mt-5 mb-5 fs-5">
