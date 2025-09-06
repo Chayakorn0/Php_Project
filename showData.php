@@ -10,7 +10,7 @@ $department = $_POST["department"];
 $salary = $_POST["salary"];
 
 // Insert data to database
-$sql = "INSERT INTO Employee(fname , lname , department , salary)
+$sql = "INSERT INTO employee(fname , lname , department , salary)
         VALUES('$fname' , '$lname' , '$department' , '$salary')";
 $result = mysqli_query($con, $sql);
 
