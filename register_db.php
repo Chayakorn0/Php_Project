@@ -17,7 +17,7 @@ if (empty($username)) {
     $_SESSION['error'] = "กรุณากรอกอีเมลให้ถูกต้อง";
     header("location: register.php");
 } else if (strlen($password) < $minLength) {
-    $_SESSION['error'] = "กรุณากรอกรหัสผ่านให้ถูกต้อง";
+    $_SESSION['error'] = "กรุณากรอกรหัสผ่านให้ครบ 6 ตัวอักษร";
     header("location: register.php");
 } else if ($password !== $confirmPassword) {
     $_SESSION['error'] = "รหัสผ่านไม่ตรงกัน";
