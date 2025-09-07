@@ -85,7 +85,7 @@ session_start();
                 <label for="floatingPassword">ยืนยันรหัสผ่าน</label>
             </div>
 
-            <button class="btn btn-primary w-100 py-2" type="submit" name="register">Sign up</button>
+            <button class="btn btn-primary w-100 py-2" type="submit" name="register">ลงทะเบียน</button>
             <p class="mt-5 mb-3 text-body-secondary">มีบัญชีเเล้วใช่ไหม <a href="login.php">เข้าสู่ระบบ</a></p>
         </form>
     </main>
