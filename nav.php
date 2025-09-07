@@ -5,10 +5,10 @@
 
             <div class="col-md-3 text-end">
                 <?php if(!isset($_SESSION['user_id'])) { ?>
-                    <a href="login.php" class="btn btn-outline-primary me-2">Login</a>
-                    <a href="register.php" class="btn btn-primary">Sign up</a>
+                    <a href="login.php" class="btn btn-outline-primary me-2">เข้าสู่ระบบ</a>
+                    <a href="register.php" class="btn btn-primary">ลงทะเบียน</a>
                 <?php } else { ?>
-                <a href="logout.php" class="btn btn-danger me-2">Logout</a>
+                <a href="logout.php" class="btn btn-danger me-2">ออกจากระบบ</a>
                 <?php } ?>
             </div>
         </header>
