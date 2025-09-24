@@ -34,12 +34,8 @@ $order = 1;
     <div class="container mt-4 text-center">
         <h1 class="mb-4"><strong>ข้อมูลพนักงานทั้งหมด <i class="fa-solid fa-users"></i></strong></h1>
         <hr>
+        <h3 class="mb-4">พนักงานที่ค้นหา</h3>
         <?php if ($count > 0) { ?>
-            <form action="searchData.php" method="POST">
-                <label class="fs-3 mb-4">ค้นหาชื่อพนักงาน</label>
-                <input type="text" name="empname" id="" class="form-control mb-4 shadow p-3 bg-body-tertiary rounded">
-                <input type="submit" value="ค้นหา" id="" class="btn btn-primary my-2 fs-5">
-            </form>
             <table class="table table-hover mt-5 mb-5 fs-5">
                 <thead class="table-dark">
                     <tr>
@@ -84,7 +80,7 @@ $order = 1;
                 <p class="fs-3">ไม่พบพนักงานที่ค้นหา</p>
             </div>
         <?php } ?>
-        <a href="insertForm.php" class="btn btn-primary fs-5 mx-1">กลับหน้าเเรก</a>
+        <a href="index.php" class="btn btn-primary fs-5 mx-1">กลับหน้าเเรก</a>
         <?php if ($count > 0) { ?>
             <input type="submit" value="ลบข้อมูลหลายรายการ" class="btn btn-danger fs-5 mx-1" onclick="return confirm('คุณต้องการลบข้อมูลหรือไม่?')">
         <?php } ?>
